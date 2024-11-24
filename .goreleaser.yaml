@@ -25,15 +25,17 @@ builds:
       - windows
       - darwin
 
-signs:
-  - cmd: gpg
-    args:
-      - --yes
-      - --output
-      - "${artifact}.sig"
-      # - -- detach-sign
-      - "${artifact}"
-    artifacts: all
+binary_signs:
+  - {}
+# signs:
+#   - cmd: gpg
+#     args:
+#       - --yes
+#       - --output
+#       - "${artifact}.sig"
+#       # - -- detach-sign
+#       - "${artifact}"
+#     artifacts: all
 
 # windows:
 #   publisher: "Ihr Name oder Firmenname"
