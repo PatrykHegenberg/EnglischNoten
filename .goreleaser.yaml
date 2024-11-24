@@ -31,7 +31,7 @@ signs:
       - --yes
       - --output
       - "${artifact}.sig"
-      - -- detach-sign
+      # - -- detach-sign
       - "${artifact}"
     artifacts: all
 
